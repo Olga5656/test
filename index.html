@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>CV</title>
+</head>
+<body>
+    <header> <!-- header есть-->
+        <div class="container" >
+            <nav class="nav">   <!-- nav есть, pagination — постраничная навигация -->
+                <ul class="nav-list">   <!-- навигация по странице есть-->
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a> </li> 
+                    <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#snippet" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">  <!-- main есть-->
+        <div class="container">
+            <div class="section">
+                <img class="photo" src="https://sobesednik.ru/storage/posts/December2020/hlehg124br083Tzf7wSb.jpg" alt="photo" width="400"> 
+            </div>
+        <!--     <section id="profile" class="section">
+                <img class="photo" src="https://sobesednik.ru/storage/posts/December2020/hlehg124br083Tzf7wSb.jpg" alt="photo" width="400">            
+            </section>  -->  
+            <section id="contacts" class="section">
+                <h1>Kvach Olga</h1>  <!-- h1 есть-->
+                <h2>Contacts</h2>
+                <ul>
+                    <li><span>Location:</span> Minsk, Belarus</li>
+                    <li><span>Phone:</span> 80297783666</li>
+                    <li><span>Email:</span> olga.kvach06@gmail.com</li>
+                </ul>
+            </section>  
+            <section id="summary" class="section">
+                <h2>About me</h2>
+                <p>I want to learn Front-End development. I believe that I will become an experienced specialist. I have good interpersonal skills, am diligent and love to learn new things.</p>
+            </section>  
+            <section id="skills" class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML;</li>
+                        <li>CSS;</li>
+                        <li>JavaScript (Basic).</li>
+                    </ul>
+            </section>  
+            <section id="snippet" class="section">
+                <h2>Code Example</h2>
+                <pre>
+                    <code>let user='John', age=22, message='Hello';
+                    alert (message);
+                    alert (user);</code>  
+                </pre>   
+            </section>  
+            <section id="courses" class="section">
+                <h2>Courses</h2>
+                <ul>
+                    <li>Course on <a href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA">Фрилансер по   жизни</a>;</li>
+                    <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learnjavascript.ru</a>(in   progress);</li> 
+                    <li>Training on <a href="https://ru.hexlet.io/my">Хекслет</a>;</li> 
+                    <li>Study of <a href="https://ru.code-basics.com/languages/html">HTML</a> and <a href="https://ru.code-basics.com/languages/css">CSS</a>;</li>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress).</li>
+                </ul>
+            </section>  
+            <section id="languages" class="section">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English language - A1, in the process of studying;</li>
+                        <li>Russian - native speaker.</li>
+                    </ul>
+            </section>
+        </div>
+    </main>
+    <footer>  <!-- footer есть-->
+        <div class="container">
+            <a href="https://github.com/Olga5656">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon git" class="git_icon">
+            </a>
+            <a href="https://github.com/Olga5656" class="git">My GitHub</a>
+            <p>2022</p>
+            <a href="https://rs.school/js/">
+                <img src="./img/rs_school_js.svg" alt="course logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
