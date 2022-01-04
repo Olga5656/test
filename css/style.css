@@ -4,11 +4,7 @@ body {
     min-width: auto;
 }
 .nav {
-    padding: 5px 0;
     background-color: green;
-
-    
-
 }
 .nav_list {
     display: flex;
@@ -27,14 +23,15 @@ body {
 }
 
 @media (max-width: 600px) {
-    .nav_list {
-        
+    .nav {
+        padding: 5px 0;
+    }
+    .nav_list {  
         display: block;
         align-items: center;
     }
     .nav_link {
         margin: 10px auto;
-        
         width: 200px;
     }
 }
