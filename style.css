@@ -1,150 +1,121 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+
 body {
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.first-block {
+    background-color: rgba(49, 45, 45, 0.671);
+    color: antiquewhite;
+}
+
+.first-block > h1 {
+    position: absolute;
+    left: -9999px;
+}
+
+.contacts {
+    margin: 3rem 0 0 4rem;
+}
+
+.section-contacts {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    font-family: 'Source Serif Pro', serif;
-    line-height: 1.5;
-    color: #000;
+    align-items: flex-start;
+    width: 25em;
 }
 
-
-header {
-    padding: 0 5em;
-    background-color: #A8A8A8;
-    
+li {
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
-.nav-list {/*
-    width: 100%;*/
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-
-
-.nav-link {
-    padding: 0 10px;
-    line-height: 50px;
-    transition: 0.3s;
-}
-
-.nav-item a {
-    font-weight: bold;
-    font-size: 18px;
-    color: #03172A;
-    transition: color 0.5s;
-}
-
-.nav-item a:hover {
-    color: #ffffff;
-    text-decoration: none;
+li > span {
+    font-weight: 600;
 }
 
 .main-container {
-    padding: 2em 5em 1em;
     display: flex;
     justify-content: center;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1440px;
-}
-.section {
-    width: 40%;
-    padding: 0 50px;
-}
-@media (max-width: 768px) {
-    .section {
-      width: 100%;
-    }
-    header {
-        display: none;
-    }
-}
 
-.main-container > .container {
-    display: flex;
-    flex-wrap: wrap;
+.main-block {
+    margin-left: 5em;
 }
-
-#profile {
-    display: flex;
-    justify-content: center;
-}
-/*
-.photo {
-    max-width: 30vw;
-}
-*/
 
 h1 {
-    margin: 0;
-    font: normal normal bold 5em/1.5 'Source Serif Pro', serif;
-    color: #1A2335;
+    margin: 3rem 0 3rem 0;
+    font-size: 5rem;
 }
 
-
-                            /* стилизация ссылок в разделе Courses*/
-li > a {
-    color: #3D3D3D;
-    transition: color 0.5s;
-}
-
-li > a:hover {
-    color: #B5B5B5;
-    text-decoration: underline;
-}
-
-                            /*footer*/
-footer { 
-    width: 100%;
-}
-
-footer > .container {
-    padding: 0.5em 5em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #233546;
-}
-
-.container > a {
-    color: #B5B5B5;
-}
-.container > p {
-    margin: 10px 20px;
-    color: #B5B5B5;
-}
-
-a > img {
-    width: 10vw;
+h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 a {
-    text-decoration: none;  
-    color: #000;
+    color: black;
+    transition: 0.2s;
 }
 
-.git {
-    transition: color 0.5s;
-}
-
-.git:hover {
-    text-decoration: underline;
-    color: white;
-}
-
-.git > a {
-    align-items: center;
-    justify-content: center;
+a:hover {
+    color: lime;
 }
 
 .git_icon {
     width: 2vw;
     margin-right: 10px;
+    transition: color 0.5s;
 }
+.git{
+
+    width: 2.2rem;
+}
+
+  .git::after {
+    content: "";
+    float: bottom;
+    width: 2.2rem;
+    height: 2px;
+
+  }
+  
+  /* Для стилизации */
+  .git:hover{
+    background: yellow;
+
+  }
+
+
+.container > a {
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+.container > p {
+    margin: 10px 20px;
+    color: #B5B5B5;
+}
+
+
